@@ -250,3 +250,21 @@ input.p-dropdown-label {
         }
     }
 }
+
+.p-input-filled {
+    .p-dropdown {
+        background: $inputFilledBg;
+        
+        &:not(.p-disabled):hover {
+            background-color: $inputFilledHoverBg;
+        }
+
+        &:not(.p-disabled).p-focus {
+            background-color: $inputFilledFocusBg;
+
+            .p-inputtext {
+                background-color: transparent;
+            }
+        }
+    }
+}
